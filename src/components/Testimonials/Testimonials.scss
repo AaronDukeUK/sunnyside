@@ -1,0 +1,79 @@
+@import '../../styles/variables';
+
+.testimonials {
+  padding: 160px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &__title {
+    margin-bottom: 80px;
+    font-family: $title-family;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: $dark-blue-four;
+
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 25px;
+
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    text-align: center;
+
+  }
+  &__img {
+    height: 72px;
+    border-radius: 50%;
+
+  }
+  &__text {
+    margin: 58px 0 69px 0;
+    font-family: $body-family;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.128571px;
+    color: $dark-blue-two
+
+  }
+  &__name {
+    & span {
+      display: block;
+    }
+    & span:first-child {
+      font-family: $title-family;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.128571px;
+      color: $dark-blue-one;
+      margin-bottom: 9px;
+    }
+    & span:last-child {
+      font-family: $body-family;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 25px;
+      letter-spacing: -0.1px;
+      color: $dark-blue-four;
+
+    }
+
+  }
+}

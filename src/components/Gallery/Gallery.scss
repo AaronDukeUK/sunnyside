@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  &__img {
+    width: 100%;
+  }
+}

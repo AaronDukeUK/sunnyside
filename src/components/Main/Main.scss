@@ -1,0 +1,128 @@
+@import '../../styles/variables';
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+// ---- Pictures
+
+  &__picture {
+    height: 600px;
+    width: 100%;
+    background: url("../../images/desktop/image-transform.jpg");
+    object-fit: cover;
+  }
+
+// ---- Text Articles
+
+  &__article {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+  }
+
+  &__container {
+    max-width: 445px;
+    margin: 0 auto;
+
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-family: $title-family;
+    font-weight: $title-weight-two;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.285714px;
+  }
+
+  &__body {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.128571px;
+    font-family: $body-family;
+
+    &--grey {
+      color: $dark-blue-three;
+    }
+  }
+      
+  &__link {
+    font-family: $title-family;
+    font-weight: $title-weight-two;
+    text-transform: uppercase;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &:hover > .main__rectangle {
+      opacity: 1;
+    }
+  }
+
+  &__span {
+    z-index: 1;
+  }
+
+  &__rectangle {
+    opacity: 0.25;
+    border-radius: 28px;
+    height: 10px;
+    width: 100%;
+    margin-top: -7px;
+
+    &--yellow {
+      background-color: $yellow;
+    }
+
+    &--red {
+      background-color: $red;
+    }
+  }
+
+// ---- Img Articles
+
+  &__img-article {
+    @extend .main__article;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+
+    &--cherry {
+      background: url("../../images/desktop/image-graphic-design.jpg");
+      color: $cyan;
+    }
+
+    &--orange {
+      background: url("../../images/desktop/image-photography.jpg");
+      color: $blue;
+    }
+  }
+
+  &__img-container {
+    max-width: 339px;
+    margin-bottom: 59px;
+  }
+
+  &__img-title {
+    @extend .main__title;
+    font-size: 28px;
+    margin-bottom: 27px
+  }
+
+  &__img-body {
+    @extend .main__body;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: -0.114286px;
+    margin-bottom: 0px;
+  }
+}
+
