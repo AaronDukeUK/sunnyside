@@ -14,24 +14,16 @@ export default function Main() {
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
-          <a href="" className="main__link">
+          <a href="#" className="main__link">
             <span className="main__span">Learn More</span>
             <div className="main__rectangle main__rectangle--yellow"></div>
           </a>
         </div>
       </article>
 
-      <img
-        className="main__picture egg"
-        src={transform}
-        alt="transform image"
-      />
+      <img className="main__picture egg" src={transform} alt="transform" />
 
-      <img
-        className="main__picture glass"
-        src={standout}
-        alt="stand out image"
-      />
+      <img className="main__picture glass" src={standout} alt="stand out" />
 
       <article className="main__article stand">
         <div className="main__container">
@@ -41,7 +33,7 @@ export default function Main() {
             photographers, videographers, and copywriters, we’ll build and
             extend your brand in digital places.
           </p>
-          <a href="" className="main__link">
+          <a href="#" className="main__link">
             <span className="main__span">Learn More</span>
             <div className="main__rectangle main__rectangle--red"></div>
           </a>
