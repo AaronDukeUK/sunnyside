@@ -1,4 +1,4 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 .footer {
   background-color: $cyan-footer;
   display: flex;
@@ -10,7 +10,7 @@
     font-family: $body-family;
     font-size: $logo-font-size;
     font-weight: $title-weight-one;
-    color: #458D7E;
+    color: #458d7e;
   }
   &__links {
     display: flex;
@@ -23,15 +23,14 @@
     font-size: 18px;
     line-height: 25px;
     letter-spacing: -0.128571px;
-    color: #458D7E;
+    color: #458d7e;
     &:hover {
       color: $white;
     }
   }
   &__socials {
     display: flex;
-    gap: 28px
-
+    gap: 28px;
   }
   &__social {
     display: block;
@@ -40,19 +39,7 @@
     background-repeat: no-repeat;
     background-position: center;
     &:hover {
-      filter:  brightness(0) invert(1)
-    }
-    &--facebook {
-      background-image: url('../../images/icon-facebook.svg');
-    }
-    &--instagram {
-      background-image: url('../../images/icon-instagram.svg');
-    }
-    &--twitter {
-      background-image: url('../../images/icon-twitter.svg');
-    }
-    &--pintrest {
-      background-image: url('../../images/icon-pinterest.svg');
+      filter: brightness(0) invert(1);
     }
   }
 }
